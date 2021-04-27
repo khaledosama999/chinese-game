@@ -245,7 +245,24 @@
     </div>
     <div class="container-fluid content">
         <div class="section" id="section-1">
-            <img src="./images/cyberpunk-2077.jpg" style="height:400px; width: 100%;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn" aria-label=Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn" aria-label=Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
             <div class="d-flex justify-content-start flex-nowrap overflow-auto py-3">
                 <button class="btn tag me-4">Action</button>
                 <button class="btn tag me-4">Arcade</button>
