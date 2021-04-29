@@ -117,7 +117,7 @@
                     "more_link": "daily_news.html",
                     "list": [
                         {
-                            "logo": "images/game/141/logo.jpg",
+                            "logo": "images/game/141/logo.png",
                             "title": "Roblox",
                             "href": "detail.html?id=141"
                         },
@@ -200,217 +200,83 @@
     </script>
 </head>
 <body>
-    <div class="d-flex flex-column p-3 bg-light align-items-start position-fixed" style="height:100vh;">
-          <span class="fs-4 mb-3 nav-logo fw-bold">SUPER GAME CUP</span>
-            <br>
+    <div class="top position-fixed w-100 top-0 pb-2" style="top:12px; background-color:#f8f9fa; z-index: 150;">
+        <div class="logo" style="width: 384px; display: inline-block">
+            <a href="index.html"> <img src="images/icon/logo.png" style=" width:200px; margin-left: 15px"/> </a>
+        </div>
+        <div class="search" style="margin-left: 159px; display: inline-block">
+            <form class="form-outline position-relative" style="width: 378px;" method="POST" action="search_result.html">
+                <i class="fas fa-search position-absolute" style="top: 12px;  left:9px;"></i>
+                <input type="search" id="form1" class="form-control search " style ="padding-left: 30px;"placeholder="Search" ></input>
+                <div id="myInputautocomplete-list" class="autocomplete-items mt-1 rounded-2 p-2">
+                    <div class="fw-bold mx-1 my-2">Popular Search</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="cnt">
+    <div class="left d-flex flex-column bg-light align-items-start">
           <ul class="nav nav-pills flex-column mb-auto w-100 align-items-start">
-          <li class="nav-item w-100">
+          <li class="nav-item">
             <a href="./index.html" class="px-0 nav-link">
-              <button class="nav-btn btn nav-btn-active"><i class="fas fa-warehouse me-2"></i> Home</button>
+              <button class="nav-btn btn nav-btn-active"><img class='nav-img'src="./images/icon/icon-home-selected.png" ></img> Home</button>
             </a>
           </li>
-          <li class="nav-item w-100">
+          <li class="nav-item">
             <a href="./popular.html" class=" px-0 nav-link link-dark">
-                <button class="nav-btn btn"><i class="fas fa-puzzle-piece me-2"></i>Popular</button>
+                <button class="nav-btn btn"><img class="nav-img" src="./images/icon/icon-popular-normal.png">Popular</button>
             </a>
           </li>
-          <li class="nav-item w-100">
+          <li class="nav-item">
             <a href="./new_arrival.html" class=" px-0 nav-link link-dark">
-                <button class="nav-btn btn"><i class="fas fa-check-circle me-2"></i>New Arrival</button>
+                <button class="nav-btn btn"><img class="nav-img" src="./images/icon/icon-new arrival-normal.png">New Arrival</button>
             </a>
           </li>
-          <li class="nav-item w-100">
+          <li class="nav-item">
             <a href="./review.html" class=" px-0 nav-link link-dark">
-                <button class="nav-btn btn"><i class="fas fa-clipboard me-2"></i> Reviews </button>
+                <button class="nav-btn btn"><img class="nav-img" src="./images/icon/icon-reviewa-normal.png"> Reviews </button>
             </a>
           </li>
-          <li class="nav-item w-100">
+          <li class="nav-item">
             <a href="./video.html" class=" px-0 nav-link link-dark">
-                <button class="nav-btn btn"><i class="fas fa-video me-2"></i> Videos </button>
+                <button class="nav-btn btn"><img class="nav-img" src="./images/icon/icon-video-normal.png"> Videos </button>
             </a>
           </li>
         </ul>
     </div>
-    <div class="input-group nav-top d-flex justify-content-center py-2">
-        <div class="form-outline position-relative" style="width: 378px;">
-          <i class="fas fa-search position-absolute" style="top: 12px;  left:9px;"></i>
-          <input type="search" id="form1" class="form-control search " style ="padding-left: 30px;"placeholder="Search" ></input>
-          <div id="myInputautocomplete-list" class="autocomplete-items mt-1 rounded-2 p-2">
-              <div class="fw-bold mx-1 my-2">Popular Search</div>
-              <div class="mx-1 my-2">Choice one</div>
-              <div class="mx-1 my-2">Choice two</div>
-              <div class="mx-1 my-2">Choice three</div>
-        </div>
-    </div>
-    </div>
-    <div class="container-fluid content">
-        <div class="section" id="section-1">
+    <div class="main">
+        <div class="banner section" id="section-1">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn" aria-label=Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%;" class="carousel-btn" aria-label=Slide 3"></button>
+                <div class="carousel-indicators" id="carousel-indicators">
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/cyberpunk-2077.jpg" height="400px" class="d-block w-100">
-                  </div>
+                <div class="carousel-inner" id="carousel-inner">
                 </div>
               </div>
-            <div class="d-flex justify-content-start flex-nowrap overflow-auto py-3">
-                <button class="btn tag me-4">Action</button>
-                <button class="btn tag me-4">Arcade</button>
-                <button class="btn tag me-4">Adventure</button>
-                <button class="btn tag me-4">Casual</button>
-                <button class="btn tag me-4">Puzzle</button>
-                <button class="btn tag me-4">Simulation</button>
-                <button class="btn tag me-4">Strategy</button>
-                <button class="btn tag me-4">Racing</button>
-                <button class="btn tag me-4">RPG</button>
-                <button class="btn tag me-4">Sports</button>
-                <button class="btn tag me-4">NewArrivals</button>
-                <button class="btn tag me-4">Popular</button>
-                <button class="btn tag me-4">Board</button>
-                <button class="btn tag me-4">Brain</button>
-                <button class="btn tag me-4">Card</button>
-                <button class="btn tag me-4">Education</button>
-                <button class="btn tag me-4">Music</button>
-                <button class="btn tag me-4">KidsGame</button>
+            <div class="tags d-flex justify-content-start flex-nowrap overflow-auto py-3" id="tags">
+                <a><button class="btn tag me-4">KidsGame</button></a>
             </div>
         </div>
 
         <div class="section" id="section-1">
             <div class="section-header d-flex justify-content-between align-items-center py-1">
-                <p class="m-0 ps-1">Daily News</p>
-                <a class="more-link">More</a>
+                <p class="m-0 ps-1 section-title">Daily News</p>
+                <a class="more-link" href="./daily_news.html">More</a>
             </div>
             <hr>
-            <div class="d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2" >
-                <!-- <div class="hover-img position-relative overflow-hidden" style="width: 150px; height: 150px;">
-                    <img src="./images/avatar.png">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                </div> -->
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/candy-crush.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/subway.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/temple-run.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/candy-crush.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/subway.jpeg" class="thumbnail">
-                <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/temple-run.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/candy-crush.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/subway.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-                
-                </div>
-                <div class="hover-img position-relative overflow-hidden mx-3">
-                <img src="./images/temple-run.jpeg" class="thumbnail">
-                    <div class="hover-text text-center fw-bold py-1">cyber punk</div>
-              </div>
+            <div class="daily_news d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2" id="daily_news" >
             </div>
         </div>
 
         <div class="section" id="section-2">
             <div class="section-header d-flex justify-content-between align-items-center py-1">
-                <p class="m-0 ps-1">Reviews</p>
-                <a class="more-link">More</a>
+                <p class="m-0 ps-1 section-title">Reviews</p>
+                <a class="more-link" href="./review.html">More</a>
             </div>
             <hr>
-            <div class="d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2" >
-                <div class="review-card bg-white d-flex flex-nowrap flex-row rounded-3 me-5 p-2 overflow-auto">
-                    <div class="d-flex flex-column justify-content-center review-card-section-1 overflow-auto">
-                        <div class="review-card-title d-flex flex-row justify-content-start mb-2">
-                            <img class="review-profile-pic me-1" src="./images/avatar.png">
-                            <span><span class="fw-bold">blue-suner</span> <span class="fw-lighter">Reviews </span><span class="fw-bold">who cat</span> </span>
-                        </div>
-                        <div class="review-star-rating d-flex justify-content-start mb-2">
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <div class="review-card-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-end review-card-section-2">
-                        <img class="review-thumbnail rounded-2 mb-2 me-2" src="./images/avatar.png">
-                    </div>
-                </div>
-                <div class="review-card bg-white d-flex flex-nowrap flex-row rounded-3 me-5 p-2 overflow-auto">
-                    <div class="d-flex flex-column justify-content-center review-card-section-1 overflow-auto">
-                        <div class="review-card-title d-flex flex-row justify-content-start mb-2">
-                            <img class="review-profile-pic me-1" src="./images/avatar.png">
-                            <span><span class="fw-bold">blue-suner</span> <span class="fw-lighter">Reviews </span><span class="fw-bold">who cat</span> </span>
-                        </div>
-                        <div class="review-star-rating d-flex justify-content-start mb-2">
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <div class="review-card-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-end review-card-section-2">
-                        <img class="review-thumbnail rounded-2 mb-2 me-2" src="./images/avatar.png">
-                    </div>
-                </div>
-                <div class="review-card bg-white d-flex flex-nowrap flex-row rounded-3 me-5 p-2 overflow-auto">
-                    <div class="d-flex flex-column justify-content-center review-card-section-1 overflow-auto">
-                        <div class="review-card-title d-flex flex-row justify-content-start mb-2">
-                            <img class="review-profile-pic me-1" src="./images/avatar.png">
-                            <span><span class="fw-bold">blue-suner</span> <span class="fw-lighter">Reviews </span><span class="fw-bold">who cat</span> </span>
-                        </div>
-                        <div class="review-star-rating d-flex justify-content-start mb-2">
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star star-checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                        <div class="review-card-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-end review-card-section-2">
-                        <img class="review-thumbnail rounded-2 mb-2 me-2" src="./images/avatar.png">
+            <div class="review d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2"  id="reviews">
+                <div class="review-card bg-white d-flex flex-nowrap flex-row overflow-auto position-relative">
+                    <div class="d-flex flex-column justify-content-end review-card-section-2 position-absolute" style="right: 0; bottom: 0;">
+                        <img class="review-thumbnail" src="./images/avatar.png">
                     </div>
                 </div>
             </div>
@@ -418,26 +284,25 @@
 
         <div class="section" id="section-3">
             <div class="section-header d-flex justify-content-between align-items-center py-1">
-                <p class="m-0 ps-1">Videos</p>
-                <a class="more-link">More</a>
+                <p class="m-0 ps-1 section-title">Videos</p>
+                <a class="more-link" href="video.html">More</a>
             </div>
             <hr>
-            <div class="d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2" >
-                 <img class="rounded-2 video-img me-3" src="./images/cyberpunk-2077.jpg">
-                 <img class="rounded-2 video-img me-3" src="./images/cyberpunk-2077.jpg">
-                 <img class="rounded-2 video-img me-3" src="./images/cyberpunk-2077.jpg">
+            <div class="video d-flex justify-content-start flex-nowrap overflow-auto py-3 my-2" id="videos" >
             </div>
         </div>
-        <div class="section" id="section-4">
-            <div class="d-flex flex-column justify-content-start align-items-start flex-nowrap py-3 my-2" >
-                <h2 class="text-muted"> Discover Super Games.</h2>
+        <div class="section company_description" id="section-4" style="margin-bottom: 30px; margin-top: 90px;">
+            <div class="company_description d-flex flex-column justify-content-start align-items-start flex-nowrap py-3" >
+                <h2 class="footer-header"> Discover Super Games.</h2>
                 <br>
-                <span class="text-muted"> @2021 Super Game Cup. All rights Reserved</span>
-                <span class="text-muted">Contact Us: supergamecup@outlook.com</span>
-                <span class="text-muted">Privacy Policy and Terms of Services</span>
+                <span class="text-muted footer-text"> @2021 Super Game Cup. All rights Reserved</span>
+                <span class="text-muted footer-text">Contact Us: supergamecup@outlook.com</span>
+                <span class="text-muted footer-text">Privacy Policy and Terms of Services</span>
             </div>
         </div>
     </div>
+    </div>
     <script src="./js/search.js"> </script>
+    <script src="./js/setup-home.js"></script>
 </body>
 </html>
