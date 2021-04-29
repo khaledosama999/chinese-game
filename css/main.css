@@ -40,9 +40,12 @@ body {
 .left {
     grid-column: 1/2;
     width: 384px;
-    top:88px;
     height:100vh; 
     position: sticky;
+    top: 46px; 
+    padding-top: 42px;
+    z-index: 10000;
+    position: fixed;
     margin-left: 15px;
 }
 
